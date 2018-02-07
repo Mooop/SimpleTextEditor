@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mop.simple.texteditor">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity
+            android:name="me.iwf.photopicker.PhotoPickerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="me.iwf.photopicker.PhotoPagerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.mop.simple.texteditor.view.SimpleTextViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mop.simple.texteditor.view.DraftBoxActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mop.simple.texteditor.view.SimpleTextViewPreviewActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
